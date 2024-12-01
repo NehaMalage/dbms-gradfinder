@@ -1,0 +1,119 @@
+/* Container styling */
+.login-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 20px; /* Increased padding for better spacing */
+  border: none; /* Removed border for cleaner design */
+  border-radius: 12px; /* Slightly rounded corners */
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* More prominent shadow */
+  text-align: center;
+  background-color: #f9f9f9; /* Light background for better contrast */
+}
+
+/* Heading styling */
+.login-container h2 {
+  font-size: 2rem; /* Larger heading for prominence */
+  color: #333; /* Neutral text color */
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* User type selector styling */
+.user-type-selector {
+  display: flex;
+  justify-content: space-evenly; /* Even spacing for better alignment */
+  margin-bottom: 20px;
+}
+
+.user-type-selector label {
+  font-size: 1.2rem; /* Slightly larger font */
+  font-weight: bold;
+  color: #4a90e2; /* Highlighted color to match button */
+}
+
+.user-type-selector input[type="radio"] {
+  margin-right: 8px;
+}
+
+/* Form input styling */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Increased spacing for better readability */
+}
+
+input[type="email"],
+input[type="password"],
+input[type="text"] {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px; /* Slightly rounded corners */
+  transition: border-color 0.3s ease; /* Smooth border hover effect */
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="text"]:focus {
+  outline: none;
+  border-color: #4a90e2; /* Highlight border on focus */
+  box-shadow: 0px 0px 5px rgba(74, 144, 226, 0.5); /* Subtle glow effect */
+}
+
+/* Button styling */
+button {
+  padding: 12px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 6px;
+  background-color: #4a90e2;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+button:hover {
+  background-color: #357ab8;
+}
+
+/* Link styling */
+.login-container p {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.login-container a {
+  color: #4a90e2;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.login-container a:hover {
+  color: #357ab8;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 500px) {
+  .login-container {
+    padding: 15px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15); /* Lighter shadow for smaller screens */
+  }
+
+  .login-container h2 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    font-size: 1rem;
+  }
+
+  input[type="email"],
+  input[type="password"],
+  input[type="text"] {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+}

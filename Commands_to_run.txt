@@ -1,0 +1,4 @@
+cd client: npm start
+cd server : npm run dev
+on cmd : mysql -u root -p
+USE BACKEND_FINAL;
